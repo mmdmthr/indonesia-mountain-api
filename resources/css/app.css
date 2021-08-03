@@ -1,0 +1,22 @@
+/* @import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities'; */
+
+@tailwind base;
+
+@tailwind components;
+
+@layer components {
+    .form-input {
+        @apply block w-full bg-gray-100 border border-gray-200 rounded px-5 py-3 leading-tight;
+    }
+    
+    .form-input:focus {
+        @apply outline-none bg-white;
+    }
+}
+
+
+@tailwind utilities;
